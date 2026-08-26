@@ -1,3 +1,4 @@
+import { DashboardHeader } from "@/components/dashboard-header";
 import { createClient } from "@/lib/supabase/server";
 import { redirect } from "next/navigation";
 
