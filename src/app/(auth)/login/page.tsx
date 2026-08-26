@@ -10,14 +10,15 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { createClient } from "@/lib/supabase/client";
-import { signupSchema, type SignupInput } from "@/lib/validation/auth";
+// import { signupSchema, type SignupInput } from "@/lib/validation/auth";
+import { loginSchema, type LoginInput } from "@/lib/validation/auth";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 export default function LoginPage() {
   const router = useRouter();
-  const [form, setForm] = useState<SignupInput>({ email: "", password: "", confirmPassword: "", timezone: "" });
+  const [form, setForm] = useState<LoginInput>({ email: "", password: "" });
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [serverError, setServerError] = useState("");
   const [loading, setLoading] = useState(false);
@@ -27,7 +28,7 @@ export default function LoginPage() {
     setErrors({});
     setServerError("");
 
-    const result = signupSchema.safeParse(form);
+    const result = loginSchema.safeParse(form);
     if (!result.success) {
       const fieldErrors: Record<string, string> = {};
       result.error.issues.forEach((issue) => {
