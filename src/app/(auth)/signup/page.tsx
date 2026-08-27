@@ -46,7 +46,7 @@ export default function SignupPage() {
 
     setLoading(true);
     const supabase = createClient();
-    const { error } = await supabase.auth.signUp({
+    const { data, error } = await supabase.auth.signUp({
       email: form.email,
       password: form.password,
       options: {
@@ -57,6 +57,13 @@ export default function SignupPage() {
 
     if (error) {
       setServerError(error.message);
+      return;
+    }
+
+    if (!data.session) {
+      setServerError(
+        "Check your email for a confirmation link to complete sign up."
+      );
       return;
     }
 
