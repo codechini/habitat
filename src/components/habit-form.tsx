@@ -90,7 +90,7 @@ export function HabitForm() {
             <Button
               type="submit"
               disabled={!name.trim() || loading}
-              className="flex-1 h-11 rounded-xl bg-[#007AFF] hover:bg-[#0066CC] text-white font-medium"
+              className="flex-1 h-11 rounded-xl bg-[#ffd100] hover:bg-[#ffee32] text-[#202020] font-medium"
             >
               {loading ? "Creating..." : "Create"}
             </Button>

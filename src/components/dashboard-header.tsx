@@ -30,7 +30,7 @@ export function DashboardHeader({ email }: { email: string }) {
           variant="ghost"
           size="sm"
           onClick={handleSignOut}
-          className="text-[#86868B] hover:text-[#1D1D1F] hover:bg-[#F5F5F7] rounded-xl"
+          className="text-[#e71d36] hover:text-[#1D1D1F] hover:bg-[#ffdce0] rounded-xl"
         >
           <LogOut className="h-4 w-4 mr-1.5" />
           Sign out

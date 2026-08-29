@@ -58,7 +58,7 @@ export function CalendarGrid({ checkedDates, currentMonth, today }: CalendarGrid
                 "aspect-square rounded-lg flex items-center justify-center text-xs font-medium transition-colors",
                 isFuture && "text-[#D2D2D7]",
                 !isFuture && !isChecked && !isToday && "text-[#1D1D1F]",
-                isChecked && "bg-[#007AFF] text-white",
+                isChecked && "bg-[#eeef20] text-[#1D1D1F]",
                 isToday &&
                 !isChecked &&
                 "ring-2 ring-[#007AFF]/30 text-[#007AFF]"

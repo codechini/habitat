@@ -28,10 +28,10 @@ export function HabitCard({ habit, today }: { habit: HabitWithStreaks; today: st
               href={`/dashboard/habits/${habit.id}`}
               className="group flex items-center gap-1.5"
             >
-              <h3 className="font-medium text-[#1D1D1F] truncate group-hover:text-[#007AFF] transition-colors">
+              <h3 className="font-xxl text-[#202020] truncate group-hover:text-[#000000] transition-colors">
                 {habit.name}
               </h3>
-              <ArrowRight className="h-3.5 w-3.5 text-[#C7C7CC] opacity-0 group-hover:opacity-100 transition-opacity shrink-0" />
+              <ArrowRight className="h-3.5 w-3.5 text-[#333533] opacity-0 group-hover:opacity-100 transition-opacity shrink-0" />
             </Link>
             {habit.description && (
               <p className="text-sm text-[#86868B] mt-0.5 truncate">

@@ -45,8 +45,8 @@ export function CheckInButton({
       disabled={optimistic || isPending}
       className={
         optimistic
-          ? "bg-[#34C759] border-[#34C759] text-white hover:bg-[#34C759] hover:text-white rounded-xl"
-          : "border-[#D2D2D7] text-[#007AFF] hover:bg-[#F0F0FF] rounded-xl"
+          ? "bg-[#eeef20] border-[#d6d6d6] text-[#202020] disabled:opacity-100 hover:bg-[#34C759] hover:text-white rounded-xl"
+          : "border-[#ffd100] text-[#202020] hover:bg-[#eeef20] rounded-xl"
       }
     >
       {optimistic ? (

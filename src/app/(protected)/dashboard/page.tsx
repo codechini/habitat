@@ -23,7 +23,7 @@ export default async function DashboardPage() {
           </p>
         </div>
         <Link href="/dashboard/habits/new">
-          <Button className="bg-[#007AFF] hover:bg-[#0066CC] text-white rounded-xl h-10 px-4">
+          <Button className="bg-[#ffee32] hover:bg-[#ffd100] text-[#333533] shadow rounded-xl h-10 px-4">
             <Plus className="h-4 w-4 mr-1.5" />
             New
           </Button>
