@@ -1,7 +1,6 @@
 
-1. Habitat — "Build streaks that last". One or two sentence description of the habit-tracking app.
-
-2. Features (based on what exists + what the structure implies)
+1. Habitat — "Build streaks that last".
+2. Features:
 - Email/password authentication (sign up, sign in, sign out)
 - Timezone selection captured at signup
 - Protected routes — unauthenticated users are redirected to /login
